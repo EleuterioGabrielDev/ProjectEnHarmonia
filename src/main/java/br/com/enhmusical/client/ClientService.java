@@ -1,5 +1,6 @@
 package br.com.enhmusical.client;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,7 +18,7 @@ public class ClientService {
     }
 
     public List<Client> list() {
-        return repository.findAll();
+        return repository.findAll(Sort.by("dateEvent", "timeEvent"));
     }
 
     public List<Client> searchByName(String nome) {
