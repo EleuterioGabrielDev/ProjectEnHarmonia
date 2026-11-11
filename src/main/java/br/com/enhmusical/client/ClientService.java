@@ -1,6 +1,5 @@
-package br.com.enhmusical;
+package br.com.enhmusical.client;
 
-import br.com.enhmusical.client.Client;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,7 +1,23 @@
-spring.application.name=enh-musical
-spring.datasource.url=jdbc:postgresql://localhost:5432/enhmusical
-spring.datasource.username=enh_app
-spring.datasource.password=${DB_PASSWORD}
-spring.jpa.hibernate.ddl-auto=validate
-spring.jpa.open-in-view=false
-spring.flyway.enabled=true
+spring:
+  application:
+    name: enh-musical
+
+  profiles:
+    active: local
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/enh_musical
+    username: ${DB_USER:enh_user}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: America/Sao_Paulo
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration

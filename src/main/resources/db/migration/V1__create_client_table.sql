@@ -1,11 +1,11 @@
 CREATE TABLE client (
     id BIGSERIAL PRIMARY KEY,
-    couplesName VARCHAR(150) NOT NULL,
+    couples_Name VARCHAR(150) NOT NULL,
     phone VARCHAR(11) NOT NULL ,
-    dateEvent DATE NOT NULL,
-    timeEvent TIME NOT NULL,
-    localEvent VARCHAR(200),
-    createIn TIMESTAMP NOT NULL DEFAULT now()
+    date_Event DATE NOT NULL,
+    time_Event TIME NOT NULL,
+    local_Event VARCHAR(200),
+    create_In TIMESTAMP NOT NULL DEFAULT now()
 );
 
-CREATE INDEX idx_client_event_date ON client(dateEvent);
+CREATE INDEX idx_client_event_date ON client(date_Event);

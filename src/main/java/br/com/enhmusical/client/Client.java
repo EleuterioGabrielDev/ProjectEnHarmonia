@@ -1,4 +1,4 @@
-package br.com.enhmusical;
+package br.com.enhmusical.client;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -23,7 +23,7 @@ public class Client {
     private Long id;
 
     @NotBlank
-    @Column(name = "couplesName", nullable = false, length = 150)
+    @Column(name = "couples_Name", nullable = false, length = 150)
     private String couplesName;
 
     @NotBlank
@@ -31,17 +31,17 @@ public class Client {
     private String phone;
 
     @NotNull
-    @Column(name = "dateEvent", nullable = false)
+    @Column(name = "date_Event", nullable = false)
     private LocalDate dateEvent;
 
     @NotNull
-    @Column(name = "timeEvent", nullable = false)
+    @Column(name = "time_Event", nullable = false)
     private LocalTime timeEvent;
 
     @NotBlank
-    @Column(name = "localEvent", nullable = false, length = 200)
+    @Column(name = "local_Event", nullable = false, length = 200)
     private String localEvent;
 
-    @Column(name = "createIn", nullable = false, insertable = false, updatable = false)
+    @Column(name = "create_In", nullable = false, insertable = false, updatable = false)
     private LocalDateTime createIn;
 }
