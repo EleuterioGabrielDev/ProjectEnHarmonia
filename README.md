@@ -11,10 +11,9 @@ Projeto desenvolvido com o método Agile Scrum, em Java, com foco em resolver pr
 4. Processo Scrum
 5. Product Backlog
 6. Status das Sprints
-7. Perguntas em aberto
-8. Como executar
-9. Estrutura do projeto
-10. Padrões do projeto
+7. Como executar
+8. Estrutura do projeto
+9. Padrões do projeto
 ---
 ## 🏢 Contexto e problema
 
